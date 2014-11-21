@@ -22,7 +22,6 @@ class Geo
 		$data = $this->sendRequest($url); 
 
 		$this->properties = json_decode($data, true);
-		echo '<pre>', var_dump($this->properties), '</pre>'; 
 	}
 
 	protected function sendRequest($url)
